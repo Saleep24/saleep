@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+          h1{text-align: center;
+            color: black;
+        background-color: cyan;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        h2{
+            border-left: 5px solid rgb(28, 31, 30);
+            background-color: rgba(8, 41, 228, 0.863);
+            color: azure;
+            margin-right: 28.5cm;
+        }
+        body{
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        #button{
+            background-color: green;
+    color: whitesmoke;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 20px;
+        }
+        </style>
+        <title>Survey form</title>
+    </head>
+    <body>
+        <h1>Overview on Effectiveness of Online mode of learnig</h1>
+        <form>
+            <h2>Personal Information</h2><hr>
+            First Name : <input type="text" name="name" value="Enter your first name" required>
+            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+            Middle Name  : <input type="text" name="name" value="Enter your middle name">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+            Last Name  : <input type="text" name="name" value="Enter your last name"required><br><br>
+            Date of Birth(DOB) : <input type="date" name="dob" value="dob" required><br><br>
+            Gender : <br>
+            <input type="radio" name="gender" value="male">Male
+            <input type="radio" name="gender"value="female">Female
+            <input type="radio" name="gender" value="others">Others<br><br>
+            <h2>School Related</h2><hr>
+            Which grade are you in?
+            <select required>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12" selected>12</option>
+                <option value="A-level">A-level</option>
+            </select><br><br>
+            Which educational institute are you from? 
+            <input type="text" name="school" value="Enter your school"><br><br>
+            <h2>Mode of Learning</h2><hr>
+            Which mode you were engaged personally to learn digitally? : 
+            <input type="text" name="mode" value="Enter mode of learning"><br><br>
+            How effective do yo think online classes are?<br>
+                   <input type="radio"  name="status"  required /> Very effective
+                   <input type="radio"  name="status" required/> Effective
+                   <input type="radio"  name="status" required/> satisfactory
+                   <input type="radio"  name="status" required/> not at all<br><br>
+            I could not concentrate on my studies during online classes<br>
+                   <input type="radio"  name="concentration"  required />Aggree
+                   <input type="radio"  name="concentration" required/> Neutral
+                   <input type="radio"  name="concentration" required/> Disagree<br><br>
+            How do you think online classes have affected you study?<br>
+                   <input type="radio"  name="effect"  required />Positively
+                   <input type="radio"  name="effect" required/> Neutral
+                   <input type="radio"  name="effect" required/> Negatively<br><br> 
+                Describe your online mode of learning in brief<br>
+                <textarea rows="7" cols="45">Not more than 100 words
+                </textarea> <br><br> 
+                <hr>
+               Upload your latest <b>handsome/beautiful</b> picture Here! <input type="file" name="pic"> <br><br>
+           <center> <input type="submit" name="upload" value="upload" id="button"   onclick='prompt("Response saved successfully! &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Enter a key to continue")';>
+            <input type="reset" name="discard" value="discard" id="button" style="background-color: red;"></center>
+            </form>
+    </body>
+</html>
